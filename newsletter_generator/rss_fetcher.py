@@ -10,7 +10,6 @@ class RSSFetcher:
         self.rss_urls = pd.read_csv(rss_urls_file) if os.path.exists(rss_urls_file) else self._create_default_rss_file()
         
     def _create_default_rss_file(self):
-        """Create a default RSS feeds file if none exists"""
         rss_data = {
             'category': [
                 'General', 'General', 'General',
@@ -56,7 +55,6 @@ class RSSFetcher:
         return df
     
     def fetch_articles(self, max_articles_per_feed=5):
-        """Fetch articles from all RSS feeds"""
         all_articles = []
         
         for _, row in self.rss_urls.iterrows():
@@ -81,7 +79,6 @@ class RSSFetcher:
                         'category': category
                     }
                     
-                    # Use newspaper to extract more info
                     try:
                         article = newspaper.Article(article_data['link'])
                         article.download()
