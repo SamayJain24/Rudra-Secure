@@ -24,7 +24,6 @@ class ArticleProcessor:
         self.vectorizer = TfidfVectorizer(max_features=5000)
         
     def preprocess_text(self, text):
-        """Clean and normalize text"""
         if not isinstance(text, str):
             return ""
             
@@ -49,10 +48,7 @@ class ArticleProcessor:
         return ' '.join(tokens)
     
     def process_articles(self, articles_file):
-        """Process articles data with NLP techniques"""
         articles_df = pd.read_csv(articles_file)
-        
-        # Preprocess text
         articles_df['processed_text'] = articles_df['text'].apply(self.preprocess_text)
         
         # Create TF-IDF vectors
@@ -72,7 +68,6 @@ class ArticleProcessor:
         return articles_df
     
     def extract_keywords(self, articles_df, num_keywords=5):
-        """Extract top keywords from each article"""
         keywords_list = []
         
         for _, row in articles_df.iterrows():
