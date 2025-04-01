@@ -1,0 +1,19 @@
+category,source,url
+General,BBC World News,http://feeds.bbci.co.uk/news/world/rss.xml
+General,The New York Times,https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+General,Reuters,http://feeds.reuters.com/reuters/worldNews
+Technology,TechCrunch,https://techcrunch.com/feed/
+Technology,Wired,https://www.wired.com/feed/rss
+Technology,MIT Technology Review,https://www.technologyreview.com/feed/
+Finance,Bloomberg,https://www.bloomberg.com/feed/podcast/masters-in-business
+Finance,CNBC,https://www.cnbc.com/id/100003114/device/rss/rss.html
+Finance,Financial Times,https://www.ft.com/rss/home
+Sports,ESPN,https://www.espn.com/espn/rss/news
+Sports,BBC Sport,http://feeds.bbci.co.uk/sport/rss.xml
+Sports,Sky Sports,https://www.skysports.com/rss/12040
+Entertainment,Variety,https://variety.com/feed/
+Entertainment,Hollywood Reporter,https://www.hollywoodreporter.com/feed/
+Entertainment,Billboard,https://www.billboard.com/feed/
+Science,NASA,https://www.nasa.gov/feed/
+Science,Science Daily,https://www.sciencedaily.com/rss/all.xml
+Science,Ars Technica Science,https://feeds.arstechnica.com/arstechnica/science
