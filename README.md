@@ -144,4 +144,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Feel free to adjust any sections as needed to better suit your project details. Happy coding!
