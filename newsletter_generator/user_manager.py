@@ -10,7 +10,6 @@ class UserManager:
         self.users = self._load_users()
         
     def _load_users(self):
-        """Load users from file or create default users"""
         if os.path.exists(self.users_file):
             with open(self.users_file, 'r') as f:
                 return json.load(f)
@@ -64,7 +63,7 @@ class UserManager:
             return default_users
             
     def calculate_article_relevance(self, user_id, article, vectorizer):
-        """Calculate how relevant an article is to a user's interests"""
+        # Calculate how relevant an article is to a user's interests
         if user_id not in self.users:
             return 0
             
@@ -94,9 +93,9 @@ class UserManager:
         return total_score
         
     def get_user(self, user_id):
-        """Get a specific user by ID"""
+        # Get a specific user by ID
         return self.users.get(user_id)
         
     def get_all_users(self):
-        """Get all users"""
+        # Get all users
         return self.users
