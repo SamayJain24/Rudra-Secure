@@ -9,7 +9,7 @@ class NewsletterGenerator:
         self.vectorizer = TfidfVectorizer(max_features=5000)
         
     def generate_newsletters(self, processed_articles, output_dir='output'):
-        """Generate personalized newsletters for all users"""
+        # Generate personalized newsletters for all users
         # Create output directory if it doesn't exist
         os.makedirs(output_dir, exist_ok=True)
         
@@ -21,7 +21,7 @@ class NewsletterGenerator:
             self._generate_user_newsletter(user_id, user, processed_articles, output_dir)
         
     def _generate_user_newsletter(self, user_id, user, processed_articles, output_dir):
-        """Generate a newsletter for a specific user"""
+        # Generate a newsletter for a specific user
         # Calculate relevance score for each article
         article_scores = []
         
@@ -51,7 +51,7 @@ class NewsletterGenerator:
         return filename
         
     def _format_newsletter(self, user, top_articles):
-        """Format the newsletter in Markdown"""
+        # Format the newsletter in Markdown
         # Newsletter header
         now = datetime.now().strftime("%B %d, %Y")
         content = f"# Personalized Newsletter for {user['name']}\n\n"
