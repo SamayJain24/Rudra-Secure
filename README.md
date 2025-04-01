@@ -59,7 +59,7 @@ newsletter_generator/
 1. **Clone the repository:**
 
    ```bash
-   git clone [https://github.com/your_username/newsletter_generator.git](https://github.com/SamayJain24/Rudra-Secure.git)
+   git clone https://github.com/your_username/newsletter_generator.git
    
    cd newsletter_generator
    ```
